@@ -44,7 +44,7 @@ public class TargetMover: MonoBehaviour {
     private float timeBetweenSteps;
 
     protected virtual void Start() {
-        tilemapGraph = new TilemapGraph(tilemap, allowedTiles.Get());
+        tilemapGraph = new TilemapGraph(tilemap, allowedTiles);
         timeBetweenSteps = 1 / speed;
         MoveTowardsTheTarget();
     }

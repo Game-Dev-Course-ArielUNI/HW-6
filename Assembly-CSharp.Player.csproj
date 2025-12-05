@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{77799349-6C94-66E5-BA9D-1D4C7D9F2155}</ProjectGuid>
+    <ProjectGuid>{F53E62C2-A602-B95C-5DED-5EE4500685DC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -61,6 +61,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.8f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\2-player\AbilityPickup.cs" />
     <Compile Include="Assets\Scripts\1-tiles\AllowedTiles.cs" />
     <Compile Include="Assets\Scripts\3-enemies\Patroller.cs" />
     <Compile Include="Assets\Scripts\2-player\ClickMover.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="Assets\Scripts\3-enemies\Cycle.cs" />
     <Compile Include="Assets\Scripts\2-player\KeyboardMover.cs" />
     <Compile Include="Assets\Scripts\2-player\TargetMover.cs" />
+    <Compile Include="Assets\Scripts\2-player\PlayerAbilities.cs" />
     <Compile Include="Assets\Scripts\4-generation\TilemapCaveGenerator.cs" />
     <Compile Include="Assets\Scripts\0-bfs\TilemapGraph.cs" />
     <Compile Include="Assets\Scripts\4-generation\CaveGenerator.cs" />
@@ -78,6 +80,7 @@
     <Compile Include="Assets\Scripts\2-player\KeyboardMoverByTile.cs" />
     <Compile Include="Assets\Scripts\3-enemies\EnemyControllerStateMachine.cs" />
     <Compile Include="Assets\Scripts\1-tiles\TileLogger.cs" />
+    <Compile Include="Assets\Scripts\1-tiles\TileCarver.cs" />
     <Compile Include="Assets\Scripts\0-bfs\IGraph.cs" />
     <Compile Include="Assets\Scripts\3-enemies\StateMachine.cs" />
     <Compile Include="Assets\Scripts\3-enemies\Chaser.cs" />

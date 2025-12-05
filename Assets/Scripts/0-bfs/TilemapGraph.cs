@@ -1,33 +1,84 @@
-﻿using System.Linq;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
 /**
- * A graph that represents a tilemap, using only the allowed tiles.
+ * A graph that represents a tilemap, using AllowedTiles rules.
  */
-public class TilemapGraph: IGraph<Vector3Int> {
+public class TilemapGraph : IGraph<Vector3Int>
+{
     private Tilemap tilemap;
-    private TileBase[] allowedTiles;
+    private AllowedTiles allowedTiles;
 
-    public TilemapGraph(Tilemap tilemap, TileBase[] allowedTiles) {
+    public TilemapGraph(Tilemap tilemap, AllowedTiles allowedTiles)
+    {
         this.tilemap = tilemap;
         this.allowedTiles = allowedTiles;
     }
 
-    static Vector3Int[] directions = {
-            new Vector3Int(-1, 0, 0),
-            new Vector3Int(1, 0, 0),
-            new Vector3Int(0, -1, 0),
-            new Vector3Int(0, 1, 0),
+    // 4-directional movement on the grid
+    static readonly Vector3Int[] directions = {
+        new Vector3Int(-1, 0, 0),
+        new Vector3Int( 1, 0, 0),
+        new Vector3Int( 0,-1, 0),
+        new Vector3Int( 0, 1, 0),
     };
 
-    public IEnumerable<Vector3Int> Neighbors(Vector3Int node) {
-        foreach (var direction in directions) {
+    public IEnumerable<Vector3Int> Neighbors(Vector3Int node)
+    {
+        foreach (var direction in directions)
+        {
             Vector3Int neighborPos = node + direction;
             TileBase neighborTile = tilemap.GetTile(neighborPos);
-            if (allowedTiles.Contains(neighborTile))
+
+            // If no rules defined, everything is blocked.
+            if (allowedTiles != null && allowedTiles.Contains(neighborTile))
+            {
                 yield return neighborPos;
+            }
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+//using System.Linq;
+//using System.Collections.Generic;
+//using UnityEngine;
+//using UnityEngine.Tilemaps;
+
+///**
+// * A graph that represents a tilemap, using only the allowed tiles.
+// */
+//public class TilemapGraph: IGraph<Vector3Int> {
+//    private Tilemap tilemap;
+//    private TileBase[] allowedTiles;
+
+//    public TilemapGraph(Tilemap tilemap, TileBase[] allowedTiles) {
+//        this.tilemap = tilemap;
+//        this.allowedTiles = allowedTiles;
+//    }
+
+//    static Vector3Int[] directions = {
+//            new Vector3Int(-1, 0, 0),
+//            new Vector3Int(1, 0, 0),
+//            new Vector3Int(0, -1, 0),
+//            new Vector3Int(0, 1, 0),
+//    };
+
+//    public IEnumerable<Vector3Int> Neighbors(Vector3Int node) {
+//        foreach (var direction in directions) {
+//            Vector3Int neighborPos = node + direction;
+//            TileBase neighborTile = tilemap.GetTile(neighborPos);
+//            if (allowedTiles.Contains(neighborTile))
+//                yield return neighborPos;
+//        }
+//    }
+//}
