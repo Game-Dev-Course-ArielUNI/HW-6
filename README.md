@@ -3,8 +3,11 @@
 A project with step-by-step scenes illustrating how to construct a 2D scene using tilemaps,
 and how to do path-finding using the BFS algorithm.
 
-Text explanations are available 
+* Text explanations are available 
 [here](https://github.com/gamedev-at-ariel/gamedev-5782) in folder 07.
+
+* the game in itch.io are available
+ [here](https://yousef-masarwa97.itch.io/player-vs-enemy)
 
 ## Cloning
 To clone the project, you may need to install git lfs first:
