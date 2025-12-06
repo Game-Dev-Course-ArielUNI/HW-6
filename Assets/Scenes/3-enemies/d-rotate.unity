@@ -259,6 +259,62 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &529932143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 529932144}
+  - component: {fileID: 529932145}
+  m_Layer: 0
+  m_Name: AllowedTilesPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &529932144
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529932143}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 536966466}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &529932145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529932143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94aa9c593b15b9248a02a0b984d76a40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AllowedTiles
+  allowedTiles:
+  - {fileID: 11400000, guid: 149fb7c95775bc842bc8f54055585274, type: 2}
+  - {fileID: 11400000, guid: 2ad1759387b28444892c8549e6122652, type: 2}
+  - {fileID: 11400000, guid: 8f2cab6dea1a2d147b231cc92eb1f7e2, type: 2}
+  - {fileID: 11400000, guid: 0cea26e1a47ac8d46850becac1a6c757, type: 2}
+  waterTiles:
+  - {fileID: 11400000, guid: ea56eece63aba35469fea812356c7a92, type: 2}
+  - {fileID: 11400000, guid: 0230b48a2cd148149bf5502ca7328478, type: 2}
+  - {fileID: 11400000, guid: fbc7e53732751274190a9ea1250192b4, type: 2}
+  mountainTiles:
+  - {fileID: 11400000, guid: 546c35550ead79941af5f505fdd175ec, type: 2}
+  playerAbilities: {fileID: 790962208}
 --- !u!1 &536966464
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,6 +359,7 @@ Transform:
   m_Children:
   - {fileID: 931517248}
   - {fileID: 1972678412}
+  - {fileID: 529932144}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!850595691 &689619947
@@ -675,7 +732,7 @@ MonoBehaviour:
       m_Flags: 8
     m_Flags: 0
   tilemap: {fileID: 931517250}
-  allowedTiles: {fileID: 1972678413}
+  allowedTiles: {fileID: 529932145}
 --- !u!114 &790962207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3062,12 +3119,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 149fb7c95775bc842bc8f54055585274, type: 2}
   - {fileID: 11400000, guid: 2ad1759387b28444892c8549e6122652, type: 2}
   - {fileID: 11400000, guid: 8f2cab6dea1a2d147b231cc92eb1f7e2, type: 2}
-  waterTiles:
-  - {fileID: 11400000, guid: ea56eece63aba35469fea812356c7a92, type: 2}
-  - {fileID: 11400000, guid: 0230b48a2cd148149bf5502ca7328478, type: 2}
-  - {fileID: 11400000, guid: fbc7e53732751274190a9ea1250192b4, type: 2}
-  mountainTiles:
-  - {fileID: 11400000, guid: 546c35550ead79941af5f505fdd175ec, type: 2}
+  waterTiles: []
+  mountainTiles: []
   playerAbilities: {fileID: 0}
 --- !u!1 &2052329452
 GameObject:
