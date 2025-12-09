@@ -10,5 +10,19 @@ and how to do path-finding using the BFS algorithm.
  [here](https://yousef-masarwa97.itch.io/player-vs-enemy)
 
 
+---
+# Part A:
 
+ * enemey chase the player that can pick abilities to help him run:
 
+->boat:can use it to walk on sea
+
+->goat:can use it to walk on mountains
+
+->Pickaxe:can use it to swap mountains  to grass by clicking on the right mouse button
+
+---
+
+# Part B:
+
+now the enemy run away from the player by using a greedy algorithm that always picks to walk to the farest position from the player position from the 4 nearest מeighbors.
