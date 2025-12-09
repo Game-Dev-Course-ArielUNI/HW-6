@@ -1,0 +1,14 @@
+C:\Users\2031\Desktop\EscapeAlgorithmTests\EscapeAlgorithmTests\bin\Debug\net8.0\EscapeAlgorithmTests.exe
+C:\Users\2031\Desktop\EscapeAlgorithmTests\EscapeAlgorithmTests\bin\Debug\net8.0\EscapeAlgorithmTests.deps.json
+C:\Users\2031\Desktop\EscapeAlgorithmTests\EscapeAlgorithmTests\bin\Debug\net8.0\EscapeAlgorithmTests.runtimeconfig.json
+C:\Users\2031\Desktop\EscapeAlgorithmTests\EscapeAlgorithmTests\bin\Debug\net8.0\EscapeAlgorithmTests.dll
+C:\Users\2031\Desktop\EscapeAlgorithmTests\EscapeAlgorithmTests\bin\Debug\net8.0\EscapeAlgorithmTests.pdb
+C:\Users\2031\Desktop\EscapeAlgorithmTests\EscapeAlgorithmTests\obj\Debug\net8.0\EscapeAlgorithmTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2031\Desktop\EscapeAlgorithmTests\EscapeAlgorithmTests\obj\Debug\net8.0\EscapeAlgorithmTests.AssemblyInfoInputs.cache
+C:\Users\2031\Desktop\EscapeAlgorithmTests\EscapeAlgorithmTests\obj\Debug\net8.0\EscapeAlgorithmTests.AssemblyInfo.cs
+C:\Users\2031\Desktop\EscapeAlgorithmTests\EscapeAlgorithmTests\obj\Debug\net8.0\EscapeAlgorithmTests.csproj.CoreCompileInputs.cache
+C:\Users\2031\Desktop\EscapeAlgorithmTests\EscapeAlgorithmTests\obj\Debug\net8.0\EscapeAlgorithmTests.dll
+C:\Users\2031\Desktop\EscapeAlgorithmTests\EscapeAlgorithmTests\obj\Debug\net8.0\refint\EscapeAlgorithmTests.dll
+C:\Users\2031\Desktop\EscapeAlgorithmTests\EscapeAlgorithmTests\obj\Debug\net8.0\EscapeAlgorithmTests.pdb
+C:\Users\2031\Desktop\EscapeAlgorithmTests\EscapeAlgorithmTests\obj\Debug\net8.0\EscapeAlgorithmTests.genruntimeconfig.cache
+C:\Users\2031\Desktop\EscapeAlgorithmTests\EscapeAlgorithmTests\obj\Debug\net8.0\ref\EscapeAlgorithmTests.dll
